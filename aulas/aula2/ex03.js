@@ -1,23 +1,17 @@
 const prompt = require("prompt-sync")();
 
-function somar(a, b) {
-    return a + b;
-}
+const somar = (a, b) => a + b;
 
-function subtrair(a, b) {
-    return a - b;
-}
+const subtrair = (a, b) => a - b;
 
-function multiplicar(a, b) {
-    return a * b;
-}
+const multiplicar = (a, b) => a * b;
 
-function dividir(a, b) {
+const dividir = (a, b) => {
     if (b === 0) {
         return "Erro: divisão por zero";
     }
     return a / b;
-}
+};
 
 let num1 = Number(prompt("Digite o primeiro número: "));
 let num2 = Number(prompt("Digite o segundo número: "));
